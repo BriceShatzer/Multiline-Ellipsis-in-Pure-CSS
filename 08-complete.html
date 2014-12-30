@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<style>
+		html, body, p { margin: 0; padding: 0; font-family: sans-serif;}
+
+		.ellipsis {
+			overflow: hidden;
+			height: 200px;
+			line-height: 25px;
+			margin: 20px;
+			border: 5px solid #AAA; }
+
+		.ellipsis:before {
+			content:"";
+			float: left;
+			width: 5px; height: 200px; }
+
+		.ellipsis > *:first-child {
+			float: right;
+			width: 100%;
+			margin-left: -5px; }		
+
+		.ellipsis:after {
+			content: "\02026";  
+
+			box-sizing: content-box;
+			-webkit-box-sizing: content-box;
+			-moz-box-sizing: content-box;
+
+			float: right; position: relative;
+			top: -25px; left: 100%; 
+			width: 3em; margin-left: -3em;
+			padding-right: 5px;
+			
+			text-align: right;
+
+			background: -webkit-gradient(linear, left top, right top,
+				from(rgba(255, 255, 255, 0)), to(white), color-stop(50%, white));
+			background: -moz-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);			
+			background: -o-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+			background: -ms-linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+			background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white); }
+	</style>
+</head>
+<body>
+	<div class="ellipsis"><div>
+		<p>Call me Ishmael.  Some years ago &ndash; never mind how long precisely &ndash; having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.  It is a way I have of driving off the spleen, and regulating the circulation.  Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off &ndash; then, I account it high time to get to sea as soon as I can.</p>	
+	</div></div>
+</body>
+</html>

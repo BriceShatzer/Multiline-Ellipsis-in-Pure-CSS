@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>06.sweep</title>
+	<style>
+		html, body { margin: 0; padding: 0; font-family: sans-serif;}	
+
+		.ellipsis:before, .ellipsis:after, .ellipsis > * {
+			opacity: 0.7; }
+
+		.ellipsis {
+			overflow: hidden;
+			height: 200px;
+			line-height: 25px;
+			margin: 20px 20px 50px; 
+			border: 5px solid #AAA; }
+
+		.ellipsis:before {
+			content: "";
+			float: left;
+			width: 5px; height: 200px; 
+			background: #F0F; }
+		.ellipsis > *:first-child {
+			float: right;
+			width: 100%; 
+			margin-left: -5px;
+			background: #AFF; }
+		.ellipsis:after {
+			content: "realend";
+			float: right; position: relative;
+			top: -25px;	left: 100%;
+			width: 100px; margin-left: -100px;
+			padding-right: 5px;
+			background: #FAA; font-size: 14px; }
+	</style>
+</head>
+<body>
+	<div class="ellipsis"><div>2.main<br>float:left<br>Fairly short text
+	</div></div>
+
+	<div class="ellipsis"><div>Call me Ishmael.  Some years ago &ndash; never mind how long precisely &ndash; having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.  It is a way I have of driving off the spleen, and regulating the circulation.  Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off &ndash; then, I account it high time to get to sea as soon as I can.
+	</div></div>
+</body>
+</html>
